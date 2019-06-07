@@ -4,7 +4,5 @@
   "main": "index.js",
   "author": "Jonathan Berens",
   "license": "MIT",
-  "devDependencies": {
-    "eslint": "^5.16.0"
-  }
+  "devDependencies": {}
 }
