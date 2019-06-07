@@ -1,0 +1,36 @@
+function removeDuplicates(A) {
+  let b = [];
+  for (curr of A) {
+    console.log(!(curr in b), curr);
+    if (!(curr in b)) {
+      b.push(curr);
+    }
+  }
+  console.log({ b });
+  return b;
+}
+
+removeDuplicates([1, 2, 2, 3, 5, 5, 5, 5, 5, 6, 7]);
+
+function tagObjects(O) {
+  // Loop through each record of array
+  for (record of O) {
+    // loop through the props of each record
+    newRecord = {};
+    for (curr in record) {
+      newObJ = {};
+      // find total for object
+      const total = curr.reduce((acc, tot) => {
+        newObJ.a = acc.a;
+        newObJ.b = acc.a;
+        newObJ.tag = "";
+        tot = acc.a + acc.b;
+      });
+      newObJ.total = tot;
+    } //end of record loop
+    newRecord.push(newObJ);
+  } //end of array loop
+  console.log({ newRecord });
+}
+
+tagObjects([{ a: 1, b: 2 }, { b: 3 }]);
