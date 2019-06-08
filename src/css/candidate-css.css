@@ -103,7 +103,7 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+  /* line-height: 1;*/
   height: 90%;
   width: 90%;
   position: relative;
@@ -136,35 +136,181 @@ table {
 /* #DE8A47 light orange */
 /* #E6E7E8 light grey */
 
+:root {
+  --light_turquoise: #579794;
+  --dark_turquoise: #22565e;
+  --light_green: #8fd047;
+  --dark_green: #66af39;
+  --light_orange: #de8a47;
+  --light_grey: #e6e7e8;
+}
+
 /* CANDIDATE CSS STARTS HERE */
 
 .best-available {
-  height: 500px;
+  height: 525px;
   width: 500px;
-  padding: 10px;
-  border: 2px solid navy;
+  padding: 0px;
+  border: 2px solid #22565e;
   border-radius: 10px;
-  margin: 30px;
+  margin: 0px;
   background-color: transparent;
-  box-sizing: border-box;
-  position: absolute;
+  opacity: 1;
+  position: fixed;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(10, [row] auto);
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: repeat(9, [row] 50px) 70px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*Row 1*/
 #title_ticketType {
   grid-row: 1;
-  grid-column: 1;
+  grid-column: 1/3;
 }
 
-#checkbox1 radio-list-container {
+#title_deliveryMethod {
+  grid-row: 6;
+  grid-column: 1/3;
+}
+
+#Label_EntryTime {
   grid-row: 2;
   grid-column: 1;
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--light_turquoise);
+  justify-self: left;
+  margin: 15px;
 }
 
-div.send-methods-container .left {
+#Label_eTicket {
+  grid-row: 7;
+  grid-column: 1;
   font-size: 1em;
-  color: green;
+  font-weight: bold;
+  color: var(--light_turquoise);
+  justify-self: left;
+  margin: 15px;
+}
+
+#Label_holdAtTicketDesk {
+  grid-row: 8;
+  grid-column: 1;
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--light_turquoise);
+  justify-self: left;
+  margin: 15px;
+}
+
+#TicketPrice {
+  grid-row: 2;
+  grid-column: 2;
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--light_orange);
+  justify-self: right;
+  margin: 15px;
+}
+
+#eTicketPrice {
+  grid-row: 7;
+  grid-column: 2;
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--light_orange);
+  justify-self: right;
+  margin: 15px;
+}
+
+#holdAtTicketDeskPrice {
+  grid-row: 8;
+  grid-column: 2;
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--light_orange);
+  justify-self: right;
+  margin: 15px;
+}
+
+#Ticket1 {
+  grid-row: 3;
+  grid-column: 1/3;
+  justify-self: center;
+}
+
+#Ticket2 {
+  grid-row: 4;
+  grid-column: 1/3;
+  justify-self: center;
+}
+
+#Ticket3 {
+  grid-row: 5;
+  grid-column: 1/3;
+  justify-self: center;
+}
+
+.Label_total-price {
+  grid-row: 9;
+  grid-column: 1;
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--light_turquoise);
+  justify-self: left;
+  margin: 15px;
+}
+.total-price {
+  grid-row: 9;
+  grid-column: 2;
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--light_orange);
+  justify-self: right;
+  margin: 15px;
+}
+
+select.concessions {
+  border: 0px;
+  outline: 0px;
+  background-color: white;
+  font-size: 1em;
+  color: grey;
+  justify-self: right;
+  width: 350px;
+}
+
+.ticket {
+  border: 5px solid var(--light_turquoise);
+  border-radius: 5px;
+  height: 25px;
+  color: grey;
+  margin: 15px;
+  font-size: 1em;
+  width: 350x;
+}
+
+.sectionHeading {
+  font-size: 2em;
+  color: var(--light_turquoise);
+  border-bottom: 2px solid var(--light_grey);
+  padding: 1px;
+  margin-left: 15px;
+}
+
+.button-checkout {
+  width: 250px;
+  height: 50px;
+  background-color: var(--dark_green);
+  border-radius: 5px;
+  grid-row: 10;
+  grid-column: 1/3;
+  font-size: 2em;
+  font-weight: bold;
+  justify-self: center;
+  text-align: center;
+  margin: 5px;
 }

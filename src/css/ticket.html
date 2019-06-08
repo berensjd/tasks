@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ingresso CSS Test</title>
+    <link rel="stylesheet" href="candidate-css.css" />
+  </head>
+  <body>
+    <div class="best-available extra-bottom-margin" id="best-available">
+      <div class="sectionHeading" id="title_ticketType">
+        Choose ticket type
+      </div>
+
+      <label id="Label_EntryTime">
+        <input
+          type="radio"
+          class="button-checkbox selected font-primary-theme-color"
+          checked="checked"
+        />
+        <span class="description">Entry - Time - 10:15</span>
+      </label>
+
+      <div class="price" id="TicketPrice">
+        £10.00
+      </div>
+
+      <div class="ticket clearfix" id="Ticket1">
+        <span class="info border-color-1">
+          <span class="title">
+            Ticket 1
+          </span>
+        </span>
+        <select class="concessions">
+          <option class="select-option" value="number:0" selected="selected">
+            Adult £10.00
+          </option>
+          <option class="select-option" value="number:1">
+            Child under 16 £8.00
+          </option>
+        </select>
+      </div>
+
+      <div class="ticket clearfix" id="Ticket2" data-id="1">
+        <span class="info border-color-1">
+          <span class="title">
+            Ticket 2
+          </span>
+        </span>
+
+        <select class="concessions  concessions-style ">
+          <option class="select-option" value="number:0" selected="selected">
+            Adult £10.00
+          </option>
+          <option class="select-option" value="number:1">
+            Child under 16 £8.00
+          </option>
+        </select>
+      </div>
+
+      <div class="ticket clearfix" id="Ticket3">
+        <span class="info border-color-1">
+          <span class="title">
+            Ticket 3
+          </span>
+        </span>
+
+        <select class="concessions">
+          <option class="select-option" value="number:0" selected="selected">
+            Adult £10.00 </option
+          ><option class="select-option" value="number:1">
+            Child under 16 £8.00
+          </option>
+        </select>
+      </div>
+
+      <div class="sectionHeading" id="title_deliveryMethod">
+        Choose delivery method
+      </div>
+
+      <label id="Label_eTicket">
+        <input
+          type="radio"
+          class="button-checkbox selected font-primary-theme-color"
+        />
+        <span class="description">E-Ticket</span>
+      </label>
+
+      <div class="price" id="eTicketPrice">
+        £0.00
+      </div>
+
+      <label id="Label_holdAtTicketDesk">
+        <input
+          type="radio"
+          class="button-checkbox selected font-primary-theme-color"
+        />
+        <span class="description">Hold at Ticket Desk</span>
+      </label>
+
+      <div class="price" id="holdAtTicketDeskPrice">£0.00</div>
+
+      <div class="Label_total-price description">
+        Total
+      </div>
+
+      <div class="price total-price">
+        £30.00
+      </div>
+
+      <div class="button-checkout">
+        Checkout
+      </div>
+    </div>
+  </body>
+</html>
