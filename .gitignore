@@ -1,5 +1,7 @@
 # dependencies
 /node_modules
+/question_3
+/ingresso
 /.pnp
 .pnp.js
 
